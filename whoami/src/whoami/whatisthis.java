@@ -11,7 +11,7 @@ public class whatisthis {
 		System.out.println(heal_item);
 		
 		
-		System.out.println("end");
+		System.out.println("end---");
 	}
 }
 
