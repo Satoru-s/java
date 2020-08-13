@@ -68,21 +68,21 @@ public class familyAccount {
 				case 3:
 					System.out.println("----------------------------------------------------------------");
 					System.out.print("本次支出金额：");
-					int outcomeValue=0;
+					int disburseValue=0;
 					boolean outcomeFlag=true;
 					while(outcomeFlag) {
-						String outcome=scanner.nextLine();
-						if(isInt(outcome)) {
-							outcomeValue=Integer.parseInt(outcome);
+						String disburse=scanner.nextLine();
+						if(isInt(disburse)) {
+							disburseValue=Integer.parseInt(disburse);
 							outcomeFlag=false;
 						}else {
 							System.out.println("输入类型有误，请重新输入支出金额");
 						}
 					}
 					System.out.println("本次支出说明：");
-					String outcomeDes = scanner.nextLine();
-					balance -= outcomeValue;
-					details += "\n支出\t"+balance+"\t"+outcomeValue+"\t"+outcomeDes;
+					String disburseDes = scanner.nextLine();
+					balance -= disburseValue;
+					details += "\n支出\t"+balance+"\t"+disburseValue+"\t"+disburseDes;
 					System.out.println("------------------------------登记完成---------------------------");
 					break;
 				case 4:
