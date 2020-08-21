@@ -1,4 +1,4 @@
-package whoami;
+
 
 public class Persona {
 	String name="default";
