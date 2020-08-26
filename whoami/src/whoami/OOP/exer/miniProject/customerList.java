@@ -100,6 +100,7 @@ public class customerList {
 		for (int i = index; i < customers.length-1; i++) {
 			customers[i]=customers[i+1];
 		}
+		customers[total-1]=null;
 		total--;
 		return true;
 	}
